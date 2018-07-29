@@ -16,7 +16,7 @@ mongoose.connect('mongodb://admin:admin1@ds051720.mlab.com:51720/websitemessaged
 	console.log(`err`);
 });
 
-app.all('*')
+app.all('*');
 
 // bodyparser setup
 app.use(bodyParser.urlencoded({ extended: true }));
