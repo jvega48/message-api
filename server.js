@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5050;
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://admin:admin1@ds051720.mlab.com:51720/websitemessagedb', {
     useMongoClient: true
-}).then( ()=>{
+}).then( () => {
 	console.log('connected succesfully');
 }, err => {
 	console.log(`err`);

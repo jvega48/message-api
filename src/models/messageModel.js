@@ -12,15 +12,20 @@ export const MessageSchema = new Schema({
         required: 'Enter a last name'
     },
     email: {
-        type: String
+        type: String,
+        required: 'Enter a email address'
     },
     company: {
-        type: String
+        type: String,
+        required: 'Enter a company name'
     },
     phone: {
         type: Number
-    },message: {
-        type: String   
+        required: 'Enter a phone number'
+    },
+    message: {
+        type: String,
+        required: 'Enter a message'   
     },
     created_date: {
        type: Date,
