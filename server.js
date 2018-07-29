@@ -2,9 +2,12 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import routes from './src/routes/messageRoutes';
+import favicon from 'serve-favicon';
 
 const app = express();
 const PORT = process.env.PORT || 5050;
+
+app.use(favicon(__dirname + '/public/message.png'))
 
 // mongoose connection
 mongoose.Promise = global.Promise;
