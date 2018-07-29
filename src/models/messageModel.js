@@ -20,7 +20,7 @@ export const MessageSchema = new Schema({
         required: 'Enter a company name'
     },
     phone: {
-        type: Number
+        type: Number,
         required: 'Enter a phone number'
     },
     message: {
